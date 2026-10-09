@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases/latest/download/Instalador-Folha-de-Bottons.exe">
+  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases">
     <img alt="Baixar para Windows" src="https://img.shields.io/badge/BAIXAR-PARA%20WINDOWS-2563eb?style=for-the-badge&logo=windows&logoColor=white">
   </a>
   <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases/latest">
@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> **Download recomendado:** use sempre o instalador publicado na página oficial de [Releases](https://github.com/ber-nuh/Folha-de-Bottons/releases/latest).
+> **Download:** clique em **BAIXAR PARA WINDOWS** para abrir a página oficial de versões. Escolha a versão mais recente e, na seção **Assets / Ativos**, clique no instalador `.exe`.
 
 ## ✨ Recursos
 
@@ -27,8 +27,8 @@
 
 ## 📥 Como baixar e instalar
 
-1. Clique no botão **BAIXAR PARA WINDOWS** no início desta página ou abra [a versão mais recente](https://github.com/ber-nuh/Folha-de-Bottons/releases/latest).
-2. Na página da versão, baixe o arquivo **Instalador-Folha-de-Bottons.exe**.
+1. Clique no botão **BAIXAR PARA WINDOWS** no início desta página ou abra [a página oficial de versões](https://github.com/ber-nuh/Folha-de-Bottons/releases).
+2. Na página da versão mais recente, localize **Assets / Ativos** e baixe o instalador com extensão `.exe` (confira o nome exibido nessa seção).
 3. Quando o download terminar, abra o arquivo baixado.
 4. Siga as etapas do assistente de instalação. Selecione a pasta de destino quando essa opção for apresentada.
 5. Ao terminar, abra o **Folha de Bottons** pelo atalho criado pelo instalador, se disponível.
@@ -100,7 +100,7 @@ Ao imprimir, selecione **100% / Tamanho real** para evitar que a escala da pági
 
 ## 🔄 Atualizações e histórico de versões
 
-- **Versão mais recente:** [abrir Releases](https://github.com/ber-nuh/Folha-de-Bottons/releases/latest).
+- **Versão mais recente:** [abrir a página oficial de versões](https://github.com/ber-nuh/Folha-de-Bottons/releases).
 - **Histórico de versões:** [ver todas as versões publicadas](https://github.com/ber-nuh/Folha-de-Bottons/releases).
 
 Cada nova versão deve informar seu número (por exemplo, `v1.0.1`), as mudanças, correções e eventuais limitações. Baixe sempre o instalador anexado à versão publicada; não use executáveis enviados por fontes desconhecidas.
