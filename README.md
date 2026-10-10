@@ -52,7 +52,6 @@ A aba principal para selecionar imagens, detectar e organizar bottons, ajustar d
 
 ![Aba Bottons — tela inicial](docs/images/aba-bottons-inicial.png)
 
-![Aba Bottons — exemplo de folha montada](docs/images/aba-bottons-exemplo.png)
 
 ### Quantidades
 
@@ -63,6 +62,8 @@ Permite agrupar bottons por tipo e definir quantas unidades de cada modelo devem
 ### Configurações
 
 Reúne opções de aparência, tamanho do texto, alto contraste, áudio e verificação de atualizações.
+
+![Aba Confugurações — exemplo de folha montada](docs/images/aba-bottons-exemplo.png)
 
 ## 🎨 Temas visuais
 
