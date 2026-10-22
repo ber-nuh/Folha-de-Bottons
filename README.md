@@ -18,11 +18,13 @@
 
 ## ✨ Recursos
 
-- Organização de imagens e montagem de folhas de bottons.
-- Ajuste de dimensões e espaçamentos.
-- Visualização da folha antes de imprimir ou exportar.
-- Controle de quantidades por modelo.
-- Temas visuais para personalizar a interface.
+- Organização de imagens e montagem de folhas de bottons para impressão.
+- Aba **Criar Folha** para usar uma imagem própria e montar um botton manualmente.
+- Pré-visualização circular com reposicionamento por arraste, zoom e centralização da imagem.
+- Adição do botton criado à folha de impressão existente ou exportação individual em PNG.
+- Ajuste de dimensões, espaçamentos, posição e quantidade de bottons.
+- Pré-visualização da folha antes de imprimir ou exportar.
+- Temas visuais para personalizar a interface, incluindo **Sálvia Mono** e **Editorial clássico**.
 - Verificação de atualizações quando disponível e com conexão à internet.
 
 ## 📥 Como baixar e instalar
@@ -59,6 +61,12 @@ Permite agrupar bottons por tipo e definir quantas unidades de cada modelo devem
 
 ![Aba Quantidades](docs/images/aba-quantidades.png)
 
+### Criar Folha
+
+Permite criar um botton a partir de uma imagem comum, sem depender da detecção automática. Clique em **Enviar imagem...** para escolher um arquivo PNG, JPG, JPEG, WEBP ou BMP. Na prévia, arraste a arte para reposicionar, use o controle de zoom para ajustar o enquadramento e clique em **Centralizar imagem** para voltar ao centro.
+
+Quando o enquadramento estiver pronto, escolha **Adicionar à folha de impressão** para inserir o botton no fluxo de impressão do aplicativo. Se quiser apenas a imagem individual, use **Salvar botton como PNG...**.
+
 ### Configurações
 
 Reúne opções de aparência, tamanho do texto, alto contraste, áudio e verificação de atualizações.
@@ -67,7 +75,7 @@ Reúne opções de aparência, tamanho do texto, alto contraste, áudio e verifi
 
 ## 🎨 Temas visuais
 
-O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do programa.
+O aplicativo oferece sete temas para personalizar a aparência da interface:
 
 ### 1. Tema padrão
 
@@ -77,23 +85,29 @@ O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do pr
 
 ![Tema claro moderno](docs/images/tema-claro-moderno.png)
 
-### 3. Âmbar premium
+### 3. Sálvia Mono
 
-![Tema âmbar premium](docs/images/tema-ambar-premium.png)
+Tema claro e minimalista, com tons suaves de verde-sálvia, fundos claros e elementos discretos.
 
-### 4. Verde esmeralda
+### 4. Editorial clássico
+
+Tema inspirado em páginas editoriais e papel tradicional, com tons de marfim, bege e marrom, além de tipografia serifada.
+
+### 5. Verde esmeralda
 
 ![Tema verde esmeralda](docs/images/tema-verde-esmeralda.png)
 
-### 5. Azul profundo transparente
+### 6. Azul profundo transparente
 
 ![Tema azul profundo](docs/images/tema-azul-profundo.png)
 
-### 6. Windows 95 clássico
+### 7. Windows 95 clássico
 
 ![Tema Windows 95 clássico](docs/images/tema-windows-95.png)
 
 ![Exemplo de folha no tema Windows 95](docs/images/tema-windows-95-exemplo.png)
+
+> O tema **Âmbar premium** foi removido e substituído por **Sálvia Mono** e **Editorial clássico**.
 
 ## 🖨️ Impressão
 
