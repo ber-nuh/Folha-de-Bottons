@@ -54,7 +54,6 @@ A aba principal para selecionar imagens, detectar e organizar bottons, ajustar d
 
 ![Aba Bottons — tela inicial](docs/images/aba-bottons-inicial.png)
 
-
 ### Quantidades
 
 Permite agrupar bottons por tipo e definir quantas unidades de cada modelo devem ser preparadas.
@@ -63,19 +62,19 @@ Permite agrupar bottons por tipo e definir quantas unidades de cada modelo devem
 
 ### Criar Folha
 
-Permite criar um botton a partir de uma imagem comum, sem depender da detecção automática. Clique em **Enviar imagem...** para escolher um arquivo PNG, JPG, JPEG, WEBP ou BMP. Na prévia, arraste a arte para reposicionar, use o controle de zoom para ajustar o enquadramento e clique em **Centralizar imagem** para voltar ao centro.
+Crie um botton usando praticamente qualquer imagem comum, sem depender da detecção automática. Clique em **Enviar imagem...** para escolher o arquivo. Na prévia, arraste a arte para reposicioná-la e use o controle de zoom para ajustar o enquadramento. O botão **Centralizar imagem** restaura o posicionamento central.
 
-Quando o enquadramento estiver pronto, escolha **Adicionar à folha de impressão** para inserir o botton no fluxo de impressão do aplicativo. Se quiser apenas a imagem individual, use **Salvar botton como PNG...**.
+Quando o enquadramento estiver pronto, selecione **Adicionar à folha de impressão** para incluir o botton na folha. Para salvar somente a arte circular, use **Salvar botton como PNG...**.
 
 ### Configurações
 
 Reúne opções de aparência, tamanho do texto, alto contraste, áudio e verificação de atualizações.
 
-![Aba Confugurações — exemplo de folha montada](docs/images/aba-bottons-exemplo.png)
+![Aba Configurações — exemplo de folha montada](docs/images/aba-bottons-exemplo.png)
 
 ## 🎨 Temas visuais
 
-O aplicativo oferece sete temas para personalizar a aparência da interface:
+O aplicativo oferece temas para personalizar a aparência da interface.
 
 ### 1. Tema padrão
 
@@ -89,15 +88,13 @@ O aplicativo oferece sete temas para personalizar a aparência da interface:
 
 Tema claro e minimalista, com tons suaves de verde-sálvia, fundos claros e elementos discretos.
 
-![Tema sálvia mono]([<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac4a3064-05f3-488a-b06c-877e8a9f7a4a" />](https://github.com/ber-nuh/Folha-de-Bottons/blob/feature/salvia-editorial-criar-folha/docs/images/Captura%20de%20tela%202026-10-22%20173157.png)
-)
+![Tema Sálvia Mono](https://github.com/user-attachments/assets/ac4a3064-05f3-488a-b06c-877e8a9f7a4a)
 
 ### 4. Editorial clássico
 
 Tema inspirado em páginas editoriais e papel tradicional, com tons de marfim, bege e marrom, além de tipografia serifada.
 
-![Tema editorial classico](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1bc007d3-5a5b-4339-b73d-d11be2893807" />
-)
+![Tema Editorial clássico](docs/images/Captura%20de%20tela%202026-10-22%20173157.png)
 
 ### 5. Verde esmeralda
 
