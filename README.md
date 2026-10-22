@@ -98,7 +98,8 @@ O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do pr
 
 ### 7. Sávio Mono
 
-![Tema salvio mono]([docs/images/Captura de tela 2026-10-22 174957.png]) 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08842540-3ad1-4468-aa9e-697f8721b21d" />
+
 
 ## 🖨️ Impressão
 
