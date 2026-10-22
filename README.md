@@ -89,7 +89,7 @@ O aplicativo oferece sete temas para personalizar a aparência da interface:
 
 Tema claro e minimalista, com tons suaves de verde-sálvia, fundos claros e elementos discretos.
 
-![Tema sálvia mono](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac4a3064-05f3-488a-b06c-877e8a9f7a4a" />
+![Tema sálvia mono]([<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac4a3064-05f3-488a-b06c-877e8a9f7a4a" />](https://github.com/ber-nuh/Folha-de-Bottons/blob/feature/salvia-editorial-criar-folha/docs/images/Captura%20de%20tela%202026-10-22%20173157.png)
 )
 
 ### 4. Editorial clássico
