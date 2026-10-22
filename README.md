@@ -77,9 +77,9 @@ O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do pr
 
 ![Tema claro moderno](docs/images/tema-claro-moderno.png)
 
-### 3. Âmbar premium
+### 3. Editorial Clássico 
 
-![Tema âmbar premium](docs/images/tema-ambar-premium.png)
+![Tema editorial classico]([docs/images/Captura%20de%20tela%202026-10-22%20173157.png])
 
 ### 4. Verde esmeralda
 
@@ -94,6 +94,10 @@ O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do pr
 ![Tema Windows 95 clássico](docs/images/tema-windows-95.png)
 
 ![Exemplo de folha no tema Windows 95](docs/images/tema-windows-95-exemplo.png)
+
+### 7. Sávio Mono
+
+![Tema salvio mono]([docs/images/Captura de tela 2026-10-22 174957.png]) 
 
 ## 🖨️ Impressão
 
