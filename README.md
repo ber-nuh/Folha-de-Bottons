@@ -89,9 +89,15 @@ O aplicativo oferece sete temas para personalizar a aparência da interface:
 
 Tema claro e minimalista, com tons suaves de verde-sálvia, fundos claros e elementos discretos.
 
+![Tema sálvia mono](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ac4a3064-05f3-488a-b06c-877e8a9f7a4a" />
+)
+
 ### 4. Editorial clássico
 
 Tema inspirado em páginas editoriais e papel tradicional, com tons de marfim, bege e marrom, além de tipografia serifada.
+
+![Tema editorial classico](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1bc007d3-5a5b-4339-b73d-d11be2893807" />
+)
 
 ### 5. Verde esmeralda
 
