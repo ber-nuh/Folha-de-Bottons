@@ -198,6 +198,9 @@ class App(tk.Tk):
         s.nb.add(box1, text="Bottons")
         Q = ttk.Frame(s.nb, padding=14)
         s.nb.add(Q, text="Quantidades")
+        create_tab = ttk.Frame(s.nb, padding=14)
+        s.nb.add(create_tab, text="Criar Folha")
+        s.build_create_tab(create_tab)
         box3, C = theme.scrolled(s.nb, s)     # aba de configurações com barra de rolagem
         s.nb.add(box3, text="Configurações")
         s.build_settings(C)
@@ -394,6 +397,142 @@ class App(tk.Tk):
         if theme.TEXT_SCALE > 1:
             s.after(150, s.make_room)   # texto grande: garante espaço para a pré-visualização
         s.after(700, s.maybe_intro)   # primeira vez: mostra a introdução
+
+    def build_create_tab(s, parent):
+        """Cria um botton a partir de uma imagem comum, sem exigir detecção automática."""
+        ttk.Label(parent, text="Criar seu botton", style="Sec.TLabel").pack(anchor="w")
+        ttk.Label(parent, text="Escolha qualquer imagem. Arraste a prévia para reposicionar e ajuste o zoom para enquadrar a arte.",
+                  style="Info.TLabel", wraplength=300, justify="left").pack(anchor="w", pady=(4, 10))
+        ttk.Button(parent, text="Enviar imagem...", style="Accent.TButton",
+                   command=s.create_button_open).pack(fill="x")
+        s.create_preview = tk.Canvas(parent, width=300, height=260, bg="#E8E8E8",
+                                     highlightthickness=0, cursor="fleur")
+        s.create_preview.pack(fill="both", expand=True, pady=(8, 4))
+        s.create_preview.bind("<ButtonPress-1>", s.create_drag_start)
+        s.create_preview.bind("<B1-Motion>", s.create_drag_move)
+        s.create_preview.bind("<Configure>", lambda e: s.create_draw_preview())
+        s.create_zoom = tk.DoubleVar(value=1.0)
+        ttk.Label(parent, text="Zoom da imagem", style="Sec.TLabel").pack(anchor="w", pady=(6, 0))
+        row = ttk.Frame(parent); row.pack(fill="x")
+        ttk.Button(row, text="−", width=3, command=lambda: s.create_zoom_by(1/1.15)).pack(side="left")
+        ttk.Scale(row, from_=0.5, to=3.0, variable=s.create_zoom, command=lambda v: s.create_draw_preview()).pack(side="left", fill="x", expand=True, padx=6)
+        ttk.Button(row, text="+", width=3, command=lambda: s.create_zoom_by(1.15)).pack(side="left")
+        ttk.Button(parent, text="Centralizar imagem", command=s.create_center_preview).pack(fill="x", pady=(4, 8))
+        ttk.Button(parent, text="Adicionar à folha de impressão", style="Accent.TButton",
+                   command=s.create_button_add).pack(fill="x")
+        ttk.Button(parent, text="Salvar botton como PNG...", command=s.create_button_save).pack(fill="x", pady=(4, 0))
+        s.create_image = None
+        s.create_image_path = None
+        s.create_pan = [0.0, 0.0]
+        s.create_drag = None
+        s.create_photo = None
+        s.create_preview.create_text(150, 130, text="Selecione uma imagem com seus bottons",
+                                     fill="#333333", tags="empty")
+
+    def create_button_open(s):
+        path = filedialog.askopenfilename(title="Escolher imagem para o botton",
+            filetypes=[("Imagens", "*.png *.jpg *.jpeg *.webp *.bmp"), ("Todos os arquivos", "*.*")])
+        if not path:
+            return
+        try:
+            im = Image.open(path).convert("RGB")
+            im.thumbnail((2400, 2400), Image.Resampling.LANCZOS)
+        except Exception as e:
+            messagebox.showerror("Criar botton", f"Não foi possível abrir a imagem:\\n{e}", parent=s)
+            return
+        s.create_image = im.copy()
+        s.create_image_path = path
+        s.create_pan = [0.0, 0.0]
+        s.create_zoom.set(1.0)
+        s.create_draw_preview()
+
+    def create_draw_preview(s):
+        if not hasattr(s, "create_preview") or s.create_image is None:
+            return
+        cv = s.create_preview
+        cv.delete("all")
+        w, h = max(10, cv.winfo_width()), max(10, cv.winfo_height())
+        im = s.create_image
+        scale = min((w * .72) / im.width, (h * .72) / im.height)
+        scale *= float(s.create_zoom.get())
+        dw, dh = max(1, int(im.width * scale)), max(1, int(im.height * scale))
+        view = im.resize((dw, dh), Image.Resampling.LANCZOS)
+        s.create_photo = ImageTk.PhotoImage(view)
+        cx, cy = w/2 + s.create_pan[0], h/2 + s.create_pan[1]
+        cv.create_image(cx, cy, image=s.create_photo, tags="art")
+        r = min(w, h) * .36
+        cv.create_oval(cx-r, cy-r, cx+r, cy+r, outline="#168CCB", width=2, dash=(4, 2))
+        cv.create_line(cx-r-12, cy, cx+r+12, cy, fill="#168CCB")
+        cv.create_line(cx, cy-r-12, cx, cy+r+12, fill="#168CCB")
+        cv.create_text(8, h-8, anchor="sw", text="Arraste para reposicionar", fill="#333333")
+
+    def create_drag_start(s, e):
+        s.create_drag = (e.x, e.y, s.create_pan[0], s.create_pan[1])
+
+    def create_drag_move(s, e):
+        if s.create_drag:
+            x, y, px, py = s.create_drag
+            s.create_pan = [px + e.x - x, py + e.y - y]
+            s.create_draw_preview()
+
+    def create_zoom_by(s, factor):
+        s.create_zoom.set(max(.5, min(3.0, s.create_zoom.get() * factor)))
+        s.create_draw_preview()
+
+    def create_center_preview(s):
+        s.create_pan = [0.0, 0.0]
+        s.create_draw_preview()
+
+    def _create_button_item(s):
+        if s.create_image is None:
+            messagebox.showinfo("Criar botton", "Primeiro escolha uma imagem.", parent=s)
+            return None
+        im = s.create_image
+        cv = s.create_preview
+        w, h = max(10, cv.winfo_width()), max(10, cv.winfo_height())
+        scale = min((w * .72) / im.width, (h * .72) / im.height) * float(s.create_zoom.get())
+        cx_view, cy_view = w/2 + s.create_pan[0], h/2 + s.create_pan[1]
+        cx = (w/2 - cx_view) / scale + im.width/2
+        cy = (h/2 - cy_view) / scale + im.height/2
+        r = min(w, h) * .36 / scale
+        cx = max(0, min(im.width, cx)); cy = max(0, min(im.height, cy))
+        r = max(2, min(r, im.width/2, im.height/2))
+        return {"src": im.copy(), "cx": cx, "cy": cy, "r": r, "color": None,
+                "auto": auto_color(im, cx, cy, r), "rot": 0, "up": "none",
+                "source_index": -1, "grp": None}
+
+    def create_button_add(s):
+        it = s._create_button_item()
+        if it is None:
+            return
+        label = os.path.basename(s.create_image_path or "Botton personalizado")
+        record = {"path": s.create_image_path, "image": it["src"], "name": label,
+                  "label": s._unique_source_label(label), "orig_size": it["src"].size}
+        s.sources.append(record)
+        it["source_index"] = len(s.sources) - 1
+        s.items.append(it)
+        s.assign(it)
+        s._refresh_source_selector()
+        s._clear_button_cache()
+        s.refresh()
+        s.nb.select(0)
+        s.update_selhint("Botton personalizado adicionado à folha de impressão.")
+
+    def create_button_save(s):
+        it = s._create_button_item()
+        if it is None:
+            return
+        path = filedialog.asksaveasfilename(title="Salvar botton como PNG", defaultextension=".png",
+            filetypes=[("Imagem PNG", "*.png")], initialfile="botton.png")
+        if not path:
+            return
+        try:
+            btn = make_button(it["src"], it["cx"], it["cy"], it["r"], s.size.get(), 300,
+                              it["color"] or it["auto"], it["rot"])
+            btn.save(path)
+            messagebox.showinfo("Criar botton", "Botton salvo em PNG.", parent=s)
+        except Exception as e:
+            messagebox.showerror("Criar botton", f"Não foi possível salvar o PNG:\\n{e}", parent=s)
 
     def build_settings(s, parent):
         s.audio_box = parent

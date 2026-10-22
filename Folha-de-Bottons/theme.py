@@ -1,6 +1,6 @@
 """Visual do programa: temas (cores + detalhes de estilo) trocáveis em tempo de execução.
 
-Os temas foram refeitos para aproximar o programa de interfaces modernas, incluindo Windows 11/Fluent, claro moderno, âmbar, esmeralda transparente e azul profundo transparente
+Os temas foram refeitos para aproximar o programa de interfaces modernas, incluindo opções escuras, claras, Sálvia Mono, Editorial clássico, esmeralda e azul profundo
 (as cores foram amostradas direto dos pixels das imagens):
 
   Tema padrão        o tema de fábrica (antigo \"Windows 11 escuro\"): grafite #202124 com destaque azul-claro #4CC2FF, janela 100% opaca
@@ -64,15 +64,28 @@ THEMES = {
         NUM="#2563EB", NUM_FG="#FFFFFF", PINS=("#2563EB", "#93C5FD", "#CBD5E1"),
         WINDOW_EFFECT=None, WINDOW_BORDER="#E6EBF2", WINDOW_CORNER=2, WINDOW_CAPTION="solid", WINDOW_ALPHA=0.96, TITLEBAR="#F8FAFC", TITLE_FG="#172033"),
 
-    "Âmbar premium": dict(
-        HEADER_BG="#211F1B", HEADER_FG="#FFFFFF", HEADER_SUB="#AAA49A", HEADER_STYLE="titlebar",
-        PANEL="#F7F7F5", CARD="#FFFFFF", TEXT="#2D3540", SEC="#202833", MUTED="#737B86", LINE="#E1E4E8",
-        BTN_BORDER="#D7DCE2", ACC="#F59E0B", ACC_HOVER="#D97706", ACC_FG="#FFFFFF", ACTIVE="#FFF3D6",
-        TAB_STRIP="#FFFFFF", TAB_BG="#FFFFFF", TAB_FG="#737B86", TAB_SEL_BG="#FFF3D6", TAB_SEL_FG="#B45309",
-        STAGE="#EEF0F4", SHADOW="#CBD0D8",
-        STAGE_FG="#202833", STAGE_SUB="#737B86", STAGE_LINE="#F59E0B",
-        NUM="#F59E0B", NUM_FG="#FFFFFF", PINS=("#F59E0B", "#F97316", "#FFFFFF"),
-        WINDOW_EFFECT=None, WINDOW_BORDER="soft-accent", WINDOW_CORNER=2, WINDOW_CAPTION="solid", WINDOW_ALPHA=1.0, TITLEBAR="#211F1B", TITLE_FG="#FFFFFF"),
+    "Sálvia Mono": dict(
+        HEADER_BG="#EAF0E5", HEADER_FG="#26352D", HEADER_SUB="#64756A", HEADER_STYLE="line", HEADER_LINE="#9AAE91",
+        PANEL="#EAF0E5", CARD="#F7F9F4", TEXT="#26352D", SEC="#34463A", MUTED="#64756A", LINE="#C8D2C2",
+        BTN_BORDER="#B8C5B2", ACC="#9AAE91", ACC_HOVER="#829A78", ACC_FG="#17251B", ACTIVE="#DCE6D6",
+        TAB_STRIP="#DCE5D7", TAB_BG="#DCE5D7", TAB_FG="#536457", TAB_SEL_BG="#F7F9F4", TAB_SEL_FG="#34463A",
+        STAGE="#E0E8DA", SHADOW="#C3CEBD",
+        STAGE_FG="#26352D", STAGE_SUB="#64756A", STAGE_LINE="#819A78",
+        NUM="#819A78", NUM_FG="#FFFFFF", PINS=("#819A78", "#B5C6A9", "#E9EFE4"),
+        WINDOW_EFFECT=None, WINDOW_BORDER="#C8D2C2", WINDOW_CORNER=2, WINDOW_CAPTION="solid", WINDOW_ALPHA=1.0,
+        TITLEBAR="#EAF0E5", TITLE_FG="#26352D"),
+
+    "Editorial clássico": dict(
+        HEADER_BG="#E8E1D0", HEADER_FG="#30291F", HEADER_SUB="#756A58", HEADER_STYLE="line", HEADER_LINE="#8B7355",
+        PANEL="#E8E1D0", CARD="#F4EEDF", TEXT="#30291F", SEC="#3C3328", MUTED="#756A58", LINE="#C8BDA7",
+        BTN_BORDER="#B8AA91", ACC="#8B7355", ACC_HOVER="#725B40", ACC_FG="#FFFDF7", ACTIVE="#DCD0B8",
+        TAB_STRIP="#D8CEB8", TAB_BG="#D8CEB8", TAB_FG="#5E5140", TAB_SEL_BG="#F4EEDF", TAB_SEL_FG="#30291F",
+        STAGE="#D8CEB8", SHADOW="#BBAE96",
+        STAGE_FG="#30291F", STAGE_SUB="#756A58", STAGE_LINE="#8B7355",
+        NUM="#8B7355", NUM_FG="#FFFDF7", PINS=("#8B7355", "#B6A486", "#EDE4D2"),
+        FONT=("Georgia", "Times New Roman", "DejaVu Serif"), FONT_SIZE=10,
+        WINDOW_EFFECT=None, WINDOW_BORDER="#B8AA91", WINDOW_CORNER=1, WINDOW_CAPTION="solid", WINDOW_ALPHA=1.0,
+        TITLEBAR="#E8E1D0", TITLE_FG="#30291F"),
 
     "Verde esmeralda": dict(
         HEADER_BG="#10201B", HEADER_FG="#FFFFFF", HEADER_SUB="#94A9A1", HEADER_STYLE="line", HEADER_LINE="#22C55E",
