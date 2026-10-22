@@ -79,7 +79,8 @@ O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do pr
 
 ### 3. Editorial Clássico 
 
-![Tema editorial classico]([docs/images/Captura%20de%20tela%202026-10-22%20173157.png])
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ef1a731d-bac8-4f25-b964-39d0439dcbbe" />
+
 
 ### 4. Verde esmeralda
 
