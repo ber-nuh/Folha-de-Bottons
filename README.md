@@ -5,14 +5,8 @@
   Aplicativo para Windows • Projeto idealizado por <strong>Ber-nuh</strong>
 </p>
 
-<p align="center">
-  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases/download/5.0.0/Instalador-Folha-de-Bottons-PySide6-5.0.0.exe">
-    <img alt="Baixar versão 5.0.0 para Windows" src="https://img.shields.io/badge/BAIXAR-VERS%C3%83O%205.0.0-2563eb?style=for-the-badge&logo=windows&logoColor=white">
-  </a>
-  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases">
-    <img alt="Histórico de versões" src="https://img.shields.io/badge/HIST%C3%93RICO-DE%20VERS%C3%95ES-444444?style=for-the-badge&logo=github">
-  </a>
-</p>
+**[⬇️ Baixar versão 5.0.0 para Windows](https://github.com/ber-nuh/Folha-de-Bottons/releases/download/5.0.0/Instalador-Folha-de-Bottons-PySide6-5.0.0.exe)**  
+[Consultar todas as versões](https://github.com/ber-nuh/Folha-de-Bottons/releases)
 
 ## ✨ Sobre o programa
 
