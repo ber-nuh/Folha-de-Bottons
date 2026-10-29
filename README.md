@@ -1,117 +1,80 @@
 # Folha de Bottons
 
 <p align="center">
-  <strong>Monte folhas de bottons para impressão de forma prática e organizada.</strong><br>
-  Aplicativo para Windows • Idealizado por <strong>Ber-nuh</strong>
+  <strong>Crie, organize e prepare folhas de bottons para impressão.</strong><br>
+  Aplicativo para Windows • Projeto idealizado por <strong>Ber-nuh</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases">
-    <img alt="Baixar para Windows" src="https://img.shields.io/badge/BAIXAR-PARA%20WINDOWS-2563eb?style=for-the-badge&logo=windows&logoColor=white">
+  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases/download/5.0.0/Instalador-Folha-de-Bottons-PySide6-5.0.0.exe">
+    <img alt="Baixar versão 5.0.0 para Windows" src="https://img.shields.io/badge/BAIXAR-VERS%C3%83O%205.0.0-2563eb?style=for-the-badge&logo=windows&logoColor=white">
   </a>
-  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases/latest">
-    <img alt="Última versão" src="https://img.shields.io/badge/VER-TODAS%20AS%20VERS%C3%95ES-444444?style=for-the-badge&logo=github">
+  <a href="https://github.com/ber-nuh/Folha-de-Bottons/releases">
+    <img alt="Histórico de versões" src="https://img.shields.io/badge/HIST%C3%93RICO-DE%20VERS%C3%95ES-444444?style=for-the-badge&logo=github">
   </a>
 </p>
 
-> **Download:** clique em **BAIXAR PARA WINDOWS** para abrir a página oficial de versões. Escolha a versão mais recente e, na seção **Assets / Ativos**, clique no instalador `.exe`.
+## ✨ Sobre o programa
 
-## ✨ Recursos
+O **Folha de Bottons** ajuda a preparar folhas de bottons de maneira prática e organizada, reunindo ferramentas para trabalhar com imagens, ajustar a composição e preparar o material para impressão.
 
-- Organização de imagens e montagem de folhas de bottons.
-- Ajuste de dimensões e espaçamentos.
-- Visualização da folha antes de imprimir ou exportar.
+A versão **5.0.0** traz uma nova etapa para o projeto, com interface reconstruída em **PySide6**, melhorias na impressão em PDF e novidades visuais.
+
+## 🚀 Novidades da versão 5.0.0
+
+- **Nova interface em PySide6:** reformulação da interface e da experiência de uso.
+- **Imagens SVG:** suporte à importação de arquivos SVG na aba **Criar Botton**, permitindo trabalhar com artes vetoriais.
+- **Impressão em PDF:** melhorias no processo de geração e preparação dos arquivos.
+- **Tema Windows 95:** inclusão de ícones próprios para complementar a identidade visual do tema.
+- **Aba Criar Folha:** ferramentas para organizar imagens, ajustar o enquadramento e montar uma folha.
+- **Temas visuais:** opções de aparência para personalizar o programa.
+
+## 🧰 Recursos
+
+- Organização e montagem de folhas de bottons.
+- Importação de imagens para criação e composição das artes.
+- Suporte a arquivos SVG na aba **Criar Botton**.
+- Ajustes de dimensões, enquadramento e espaçamento.
 - Controle de quantidades por modelo.
-- Temas visuais para personalizar a interface.
-- Verificação de atualizações quando disponível e com conexão à internet.
+- Preparação e exportação de folhas para impressão.
+- Geração de arquivos em PDF.
+- Temas visuais e opções de personalização da interface.
 
-## 📥 Como baixar e instalar
+## 📥 Download e instalação
 
-1. Clique no botão **BAIXAR PARA WINDOWS** no início desta página ou abra [a página oficial de versões](https://github.com/ber-nuh/Folha-de-Bottons/releases).
-2. Na página da versão mais recente, localize **Assets / Ativos** e baixe o instalador com extensão `.exe` (confira o nome exibido nessa seção).
-3. Quando o download terminar, abra o arquivo baixado.
-4. Siga as etapas do assistente de instalação. Selecione a pasta de destino quando essa opção for apresentada.
-5. Ao terminar, abra o **Folha de Bottons** pelo atalho criado pelo instalador, se disponível.
+1. Acesse a página da [versão 5.0.0](https://github.com/ber-nuh/Folha-de-Bottons/releases/tag/5.0.0).
+2. Na seção **Assets / Ativos**, baixe o instalador **Instalador-Folha-de-Bottons-PySide6-5.0.0.exe**.
+3. Abra o arquivo baixado e siga as instruções do instalador.
+4. Ao concluir, inicie o Folha de Bottons pelo atalho criado, se disponível.
 
-### Sobre o aviso “O Windows protegeu o computador”
+Também é possível baixar diretamente o [instalador da versão 5.0.0](https://github.com/ber-nuh/Folha-de-Bottons/releases/download/5.0.0/Instalador-Folha-de-Bottons-PySide6-5.0.0.exe).
 
-O Windows pode exibir o aviso do Microsoft Defender SmartScreen e indicar **Editor desconhecido**. Isso pode acontecer com aplicativos independentes que ainda não têm reputação suficiente ou não possuem assinatura digital reconhecida.
+### Código-fonte
 
-Esse aviso, sozinho, não confirma que o arquivo contém vírus — mas também não é uma garantia de segurança. Para se proteger:
+O código-fonte disponibilizado para esta versão pode ser encontrado nos arquivos da [release 5.0.0](https://github.com/ber-nuh/Folha-de-Bottons/releases/tag/5.0.0).
 
-- Confira se baixou o instalador deste repositório oficial.
-- Verifique se o nome do arquivo é **Instalador-Folha-de-Bottons.exe**.
-- Se o Microsoft Defender indicar uma ameaça ou o arquivo parecer diferente do esperado, não prossiga; interrompa a instalação e peça ajuda.
+## ⚠️ Aviso do Windows SmartScreen
+
+O Windows pode exibir o aviso **“O Windows protegeu o computador”** ou indicar **Editor desconhecido** ao executar o instalador. Isso pode acontecer com aplicativos independentes que não possuem assinatura digital reconhecida ou reputação suficiente.
+
+Esse aviso, por si só, não confirma que o arquivo contém vírus, mas também não garante sua segurança. Para se proteger:
+
+- Baixe o instalador somente pela página oficial deste repositório.
+- Confira se o nome do arquivo é **Instalador-Folha-de-Bottons-PySide6-5.0.0.exe**.
+- Se o Microsoft Defender indicar uma ameaça ou o arquivo parecer diferente do esperado, não prossiga.
 - **Não desative o antivírus nem a proteção do Windows para instalar o programa.**
 
-## 🧭 Abas do programa
-
-### Bottons
-
-A aba principal para selecionar imagens, detectar e organizar bottons, ajustar dimensões e espaçamentos, visualizar a folha e preparar a impressão ou exportação.
-
-![Aba Bottons — tela inicial](docs/images/aba-bottons-inicial.png)
-
-
-### Quantidades
-
-Permite agrupar bottons por tipo e definir quantas unidades de cada modelo devem ser preparadas.
-
-![Aba Quantidades](docs/images/aba-quantidades.png)
-
-### Configurações
-
-Reúne opções de aparência, tamanho do texto, alto contraste, áudio e verificação de atualizações.
-
-![Aba Confugurações — exemplo de folha montada](docs/images/aba-bottons-exemplo.png)
-
-## 🎨 Temas visuais
-
-O aplicativo conta com seis temas visuais. As imagens abaixo são capturas do programa.
-
-### 1. Tema padrão
-
-![Tema padrão](docs/images/tema-padrao.png)
-
-### 2. Claro moderno
-
-![Tema claro moderno](docs/images/tema-claro-moderno.png)
-
-### 3. Editorial Clássico 
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ef1a731d-bac8-4f25-b964-39d0439dcbbe" />
-
-
-### 4. Verde esmeralda
-
-![Tema verde esmeralda](docs/images/tema-verde-esmeralda.png)
-
-### 5. Azul profundo transparente
-
-![Tema azul profundo](docs/images/tema-azul-profundo.png)
-
-### 6. Windows 95 clássico
-
-![Tema Windows 95 clássico](docs/images/tema-windows-95.png)
-
-![Exemplo de folha no tema Windows 95](docs/images/tema-windows-95-exemplo.png)
-
-### 7. Sávio Mono
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08842540-3ad1-4468-aa9e-697f8721b21d" />
-
-
-## 🖨️ Impressão
+## 🖨️ Dica para impressão
 
 Ao imprimir, selecione **100% / Tamanho real** para evitar que a escala da página altere as medidas dos bottons.
 
-## 🔄 Atualizações e histórico de versões
+## 🔄 Atualizações
 
-- **Versão mais recente:** [abrir a página oficial de versões](https://github.com/ber-nuh/Folha-de-Bottons/releases).
-- **Histórico de versões:** [ver todas as versões publicadas](https://github.com/ber-nuh/Folha-de-Bottons/releases).
+- **Versão atual:** [5.0.0](https://github.com/ber-nuh/Folha-de-Bottons/releases/tag/5.0.0).
+- **Todas as versões:** [histórico de releases](https://github.com/ber-nuh/Folha-de-Bottons/releases).
 
-Cada nova versão deve informar seu número (por exemplo, `v1.0.1`), as mudanças, correções e eventuais limitações. Baixe sempre o instalador anexado à versão publicada; não use executáveis enviados por fontes desconhecidas.
+Consulte a página de releases para acessar os instaladores, códigos-fonte e informações de cada versão.
 
-## 🧾 Sobre o projeto
+---
 
 Projeto idealizado por **Ber-nuh** e desenvolvido com auxílio de inteligência artificial.
