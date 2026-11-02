@@ -1,43 +1,47 @@
-# Novidades — Folha de Bottons 5.1.0
+# Verificação de código-fonte — versão 5.1.0
 
-Este registro foi preparado a partir do arquivo de novidades e dos módulos presentes no código-fonte 5.1.0.
+## Resultado da comparação com 5.0.5
 
-## Criação de bottons
+A tag `5.1.0` aponta para o commit `27586d23754978fbae86e146f577cd4043e0352d`. A tag `5.0.5` aponta para `5c989efb6dafb58bbada882848762884240706cf`.
 
-- A opção **Criar Botton > Cor de fundo…** agora funciona com imagens PNG, JPG, WEBP e SVG, inclusive quando a imagem original não possui transparência.
-- A cor selecionada preenche as áreas transparentes e as sobras que aparecem quando o conteúdo é visualizado com zoom abaixo de 100%.
+Na comparação das árvores do Git, os arquivos Python rastreados têm os mesmos hashes nas duas tags. Os módulos verificados incluem:
 
-## Interação e organização da folha
+- `app.py`
+- `theme.py`
+- `detect.py`
+- `process.py`
+- `layout.py`
+- `groups.py`
+- `audio.py`
+- `cdplayer.py`
+- `winprint.py`
+- `ajuda.py`
 
-- A roda do mouse só altera caixas de seleção, campos numéricos e controles deslizantes depois que o usuário clica no respectivo controle. Antes disso, ela continua rolando o painel.
-- O zoom do círculo na aba Criar também exige clique antes de responder à roda do mouse.
-- **Canto superior** passa a ser a posição padrão para projetos novos; projetos já salvos mantêm sua posição anterior.
-- Duplo clique ou botão direito sobre um botton na folha abre as opções **Duplicar** e **Remover**.
-- Duplicar acrescenta uma cópia e atualiza a quantidade daquele modelo.
-- Remover reduz a quantidade; ao remover a última cópia, o modelo deixa a folha, mas permanece na lista.
-- A ação de remoção pode ser desfeita com **Ctrl+Z**.
+Assim, não é correto atribuir à tag 5.1.0 novas funcionalidades de código que não aparecem na árvore versionada.
 
-## Interface e acessibilidade
+## O que o código rastreado implementa
 
-- Textos de janelas padrão do Qt — como seletor de cor, abrir/salvar, confirmações e copiar/colar — passam a aparecer em português.
-- O tour guiado e a Ajuda (F1) foram atualizados para refletir as funções recentes.
-- Foi adicionado o tema **Escuro**, com cinza neutro e detalhes em violeta.
+- Interface Windows com Tkinter/ttk.
+- Detecção de círculos com OpenCV e refinamento dos recortes.
+- Agrupamento de artes semelhantes.
+- Recorte circular, giro e contorno físico de 5 mm.
+- Organização em folhas A4, A3 e tamanhos personalizados.
+- Exportação em PDF/PNG e impressão nativa do Windows.
+- Temas visuais, áudio e leitor de CD estilo Windows 95.
+- Ajustes manuais, pré-visualização com zoom e cache de renderização.
 
-## Temas clássicos
+## Branch de desenvolvimento
 
-- O tema **Windows 95 clássico** recebeu elementos inspirados no 98.css: relevos, caixas, setas, barra de título em degradê, fonte e cores clássicas.
-- No tema Windows 95, elementos da barra do visor, etiquetas numéricas, seletor de imagem e amostras de cor receberam acabamento quadrado.
-- Os elementos do pacote de ícones clássicos são utilizados somente nesse tema.
+A branch `feature/salvia-editorial-criar-folha` contém alterações que não estão na tag 5.1.0:
 
-## Notificações
+- Nova aba **Criar Folha**, para carregar uma imagem, reposicioná-la, ajustar zoom, centralizar, adicionar à folha e salvar o botton individual em PNG.
+- Temas **Sálvia Mono** e **Editorial clássico**.
+- Atualizações relacionadas à implementação desses recursos em `app.py` e `theme.py`.
 
-- Avisos de exportação, impressão, detecção, projetos e atualização passaram a ser exibidos como notificações temporárias no canto inferior direito.
-- As notificações exibem o ícone do programa, título e mensagem; desaparecem automaticamente, podem ser fechadas por clique e ficam pausadas enquanto o cursor está sobre elas.
-- Notificações simultâneas são empilhadas.
-- O estilo das notificações acompanha o tema ativo. No Windows 95, elas adotam uma janela cinza com relevo 3D e barra de título azul-marinho.
-- Erros graves e perguntas que exigem resposta continuam sendo apresentados em janelas de diálogo.
+A comparação entre essa branch e a tag 5.0.5 mostra divergência de histórico; ela não deve ser tratada como se já estivesse incorporada à release 5.1.0.
 
----
+## Divergência a conferir na publicação
 
-**Versão identificada no código-fonte:** 5.1.0  
-**Interface:** Python / PySide6
+A release 5.1.0 possui um ativo manual chamado `Codigo-fonte.zip` (37.514.145 bytes) e um instalador chamado `Instalador-Folha-de-Bottons-PySide6-5.1.0.exe`. O código rastreado pela tag, porém, usa Tkinter. O conteúdo binário do ZIP anexado precisa ser conferido diretamente para confirmar se ele contém a implementação mais recente e se corresponde ao instalador.
+
+Este documento registra apenas o que foi confirmado na árvore do GitHub; não presume o conteúdo interno do ativo ZIP.
